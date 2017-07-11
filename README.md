@@ -6,3 +6,6 @@ Example Kivy games - following python manual tutorial and online tutorials.
 * Make sure to have the right file names saved (such as Kivy.app and not Kivy2.app in the Applications folder, as per the Mac instructions).
 * Make sure to create the symbolic link too (https://kivy.org/docs/installation/installation-osx.html#using-homebrew-with-pip).
 * `kivy hello-world.py` should run hello-world.py
+
+## quickstart instructions
+https://kivy.org/docs/guide/basic.html#quickstart
