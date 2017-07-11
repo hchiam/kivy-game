@@ -1,5 +1,5 @@
 # kivy-game
-Example Kivy Game - Following Python Manual Tutorial.
+Example Kivy games - following python manual tutorial and online tutorials.
 
 * Install dependencies as per instructions on kivy.org.
 * Make sure to follow the applicable install instructions and get the right version for your computer (Mac/PC/etc.).
