@@ -22,13 +22,17 @@ class MyPaintWidget(Widget):
             # touch.ud is a python dictionary that can store custom attributes for a touch
             # store initial touch position
             touch.ud['line'] = Line(points=(touch.x, touch.y))
+            # also store colour :)
+            touch.ud['colour'] = myRandomColor
 
     # on_touch_move() is built-in to detect touch move events!
     def on_touch_move(self, touch):
-        # with self.canvas:
-        #     Color(1,0.5,0)
-        #     d = 30. # diameter
-        #     Ellipse(pos=(touch.x-d/2,touch.y-d/2), size=(d,d))
+        # also create shapes with stored colour
+        with self.canvas:
+            currentColour = touch.ud['colour']
+            Color(*currentColour, mode='hsv')
+            d = 30. # diameter
+            Ellipse(pos=(touch.x-d/2,touch.y-d/2), size=(d,d))
 
         # continue the same line while touch move (start new one at touch down)
         # add points to that custom 'line' attribute we made
